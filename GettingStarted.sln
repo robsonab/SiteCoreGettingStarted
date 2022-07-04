@@ -16,6 +16,17 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PageContent", "PageContent", "{6A6D6643-3C66-439A-9716-F3446C474852}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.Feature.PageContent", "src\Feature\PageContent\GettingStarted.Feature.PageContent\GettingStarted.Feature.PageContent.csproj", "{C443F47B-BD74-49A7-8568-240C82CBCE10}"
+	ProjectSection(ProjectDependencies) = postProject
+		{223A3784-FB22-4F12-B61B-DA6DDA48B9A3} = {223A3784-FB22-4F12-B61B-DA6DDA48B9A3}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{483AD195-8536-461B-B9B0-D5DEAA7CE63C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.Project.Website", "src\Project\Website\code\GettingStarted.Project.Website\GettingStarted.Project.Website.csproj", "{0434B66B-E14D-4255-854E-EB30C5157854}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C443F47B-BD74-49A7-8568-240C82CBCE10} = {C443F47B-BD74-49A7-8568-240C82CBCE10}
+		{223A3784-FB22-4F12-B61B-DA6DDA48B9A3} = {223A3784-FB22-4F12-B61B-DA6DDA48B9A3}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +42,10 @@ Global
 		{C443F47B-BD74-49A7-8568-240C82CBCE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C443F47B-BD74-49A7-8568-240C82CBCE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C443F47B-BD74-49A7-8568-240C82CBCE10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0434B66B-E14D-4255-854E-EB30C5157854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0434B66B-E14D-4255-854E-EB30C5157854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0434B66B-E14D-4255-854E-EB30C5157854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0434B66B-E14D-4255-854E-EB30C5157854}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +55,8 @@ Global
 		{223A3784-FB22-4F12-B61B-DA6DDA48B9A3} = {AF02CFAC-4952-408E-8E49-01A9F1F15FD7}
 		{6A6D6643-3C66-439A-9716-F3446C474852} = {82E1153B-077B-4695-BEEC-1C46745F4C70}
 		{C443F47B-BD74-49A7-8568-240C82CBCE10} = {6A6D6643-3C66-439A-9716-F3446C474852}
+		{483AD195-8536-461B-B9B0-D5DEAA7CE63C} = {AA01804B-3045-4CFF-AD13-5E7CA90305E9}
+		{0434B66B-E14D-4255-854E-EB30C5157854} = {483AD195-8536-461B-B9B0-D5DEAA7CE63C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
