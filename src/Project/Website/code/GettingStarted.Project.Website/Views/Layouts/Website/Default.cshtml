@@ -11,13 +11,12 @@
 <body>
     <form id="mainform" method="post" runat="server">
         <div id="MainPanel">
-            <div id="CenterColumn" style="background: white url('-/media/Default Website/cover.ashx') no-repeat;background-size: 1170px 402px;">
+            <div id="CenterColumn">
                 <div id="InnerCenter">
-                    <div id="Header">
-                        <img src="-/media/Default Website/sc_logo.ashx" alt="Sitecore" id="scLogo">
-                    </div>
+                    @Html.Sitecore().Placeholder("hero")
                     <div id="Content">
                         <div id="LeftContent">
+                            Teste Default page
                             @Html.Sitecore().Placeholder("main")
                         </div>
                     </div>
